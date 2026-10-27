@@ -1,0 +1,71 @@
+# Ferese Dark
+# Alacritty color theme based on the Ferese editor palette.
+
+[colors.primary]
+background = "#12141A"
+foreground = "#E6E9F2"
+dim_foreground = "#8A92A6"
+bright_foreground = "#F2F2F7"
+
+[colors.cursor]
+text = "#12141A"
+cursor = "#6EA3FF"
+
+[colors.vi_mode_cursor]
+text = "#12141A"
+cursor = "#B9A6FF"
+
+[colors.selection]
+text = "#E6E9F2"
+background = "#263B66"
+
+[colors.search.matches]
+foreground = "#12141A"
+background = "#FFB36B"
+
+[colors.search.focused_match]
+foreground = "#12141A"
+background = "#8FD3FF"
+
+[colors.footer_bar]
+foreground = "#E6E9F2"
+background = "#1B1E27"
+
+[colors.hints.start]
+foreground = "#12141A"
+background = "#FFB36B"
+
+[colors.hints.end]
+foreground = "#12141A"
+background = "#8FD3FF"
+
+[colors.normal]
+black = "#0E0F13"
+red = "#FF7D8D"
+green = "#7FE0B5"
+yellow = "#FFB36B"
+blue = "#6EA3FF"
+magenta = "#B9A6FF"
+cyan = "#8FD3FF"
+white = "#D0D7E8"
+
+[colors.bright]
+black = "#5C6475"
+red = "#FF9AAA"
+green = "#9BEAC8"
+yellow = "#FFC98D"
+blue = "#8CB8FF"
+magenta = "#CCBEFF"
+cyan = "#A9DFFF"
+white = "#F2F2F7"
+
+[colors.dim]
+black = "#0A0B10"
+red = "#A85460"
+green = "#579B7E"
+yellow = "#B27D4A"
+blue = "#4D72B2"
+magenta = "#8174B2"
+cyan = "#6494B2"
+white = "#8A92A6"
+

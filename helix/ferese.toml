@@ -1,0 +1,200 @@
+# Ferese Dark
+# Helix theme based on the Ferese editor palette.
+
+# Syntax
+"attribute" = "macro"
+"type" = "type"
+"type.builtin" = "type"
+"type.parameter" = "parameter"
+"type.enum.variant" = "type"
+
+"constructor" = "function"
+
+"constant" = "number"
+"constant.builtin" = "number"
+"constant.builtin.boolean" = "number"
+"constant.character" = "string"
+"constant.character.escape" = "macro"
+"constant.numeric" = "number"
+
+"string" = "string"
+"string.regexp" = "cyan"
+"string.special" = "cyan"
+"string.special.path" = "cyan"
+"string.special.url" = { fg = "cyan", modifiers = ["underlined"] }
+"string.special.symbol" = "string"
+
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "comment", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "comment", modifiers = ["italic"] }
+"comment.unused" = { fg = "comment", modifiers = ["dim"] }
+
+"variable" = "text"
+"variable.builtin" = "keyword"
+"variable.parameter" = "parameter"
+"variable.other.member" = "text"
+
+"label" = "macro"
+
+"punctuation" = "punctuation"
+"punctuation.delimiter" = "punctuation"
+"punctuation.bracket" = "punctuation"
+"punctuation.special" = "macro"
+
+"keyword" = "keyword"
+"keyword.control" = "keyword"
+"keyword.control.conditional" = "keyword"
+"keyword.control.repeat" = "keyword"
+"keyword.control.return" = "keyword"
+"keyword.control.exception" = "keyword"
+"keyword.operator" = "keyword"
+"keyword.directive" = "keyword"
+"keyword.function" = "keyword"
+"keyword.storage" = "keyword"
+"keyword.storage.type" = "keyword"
+"keyword.storage.modifier" = "keyword"
+
+"operator" = "punctuation"
+
+"function" = "function"
+"function.builtin" = "function"
+"function.method" = "function"
+"function.macro" = "macro"
+"function.special" = "function"
+
+"tag" = "keyword"
+"namespace" = "text"
+"special" = "macro"
+
+# Markup
+"markup.heading" = { fg = "keyword", modifiers = ["bold"] }
+"markup.heading.marker" = "punctuation"
+"markup.list" = "keyword"
+"markup.bold" = { fg = "text", modifiers = ["bold"] }
+"markup.italic" = { fg = "text", modifiers = ["italic"] }
+"markup.strikethrough" = { fg = "muted", modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "cyan", modifiers = ["underlined"] }
+"markup.link.text" = "function"
+"markup.quote" = "comment"
+"markup.raw" = "string"
+"markup.raw.inline" = { fg = "string", bg = "chrome" }
+
+# Diff
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "orange"
+"diff.delta.moved" = "type"
+
+# UI
+"ui.background" = { fg = "text", bg = "editor" }
+"ui.background.separator" = "border"
+
+"ui.text" = "text"
+"ui.text.focus" = { fg = "bright", modifiers = ["bold"] }
+"ui.text.inactive" = "muted"
+"ui.text.info" = "muted"
+
+"ui.cursor" = { fg = "editor", bg = "accent_light" }
+"ui.cursor.normal" = { fg = "editor", bg = "accent_light" }
+"ui.cursor.insert" = { fg = "editor", bg = "green" }
+"ui.cursor.select" = { fg = "editor", bg = "type" }
+"ui.cursor.match" = { fg = "editor", bg = "orange" }
+"ui.cursor.primary" = { fg = "editor", bg = "accent_light" }
+"ui.cursor.primary.normal" = { fg = "editor", bg = "accent_light" }
+"ui.cursor.primary.insert" = { fg = "editor", bg = "green" }
+"ui.cursor.primary.select" = { fg = "editor", bg = "type" }
+
+"ui.cursorline.primary" = { bg = "line" }
+"ui.cursorline.secondary" = { bg = "line_soft" }
+"ui.cursorcolumn.primary" = { bg = "line" }
+"ui.cursorcolumn.secondary" = { bg = "line_soft" }
+
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection_primary" }
+
+"ui.linenr" = "line_number"
+"ui.linenr.selected" = "punctuation"
+"ui.gutter" = { bg = "editor" }
+"ui.gutter.selected" = { bg = "line" }
+
+"ui.statusline" = { fg = "text", bg = "chrome" }
+"ui.statusline.inactive" = { fg = "muted", bg = "chrome" }
+"ui.statusline.normal" = { fg = "bright", bg = "accent" }
+"ui.statusline.insert" = { fg = "editor", bg = "green" }
+"ui.statusline.select" = { fg = "editor", bg = "type" }
+"ui.statusline.separator" = "muted"
+
+"ui.bufferline" = { fg = "muted", bg = "chrome" }
+"ui.bufferline.active" = { fg = "text", bg = "editor", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "chrome" }
+
+"ui.popup" = { fg = "text", bg = "chrome" }
+"ui.popup.info" = { fg = "text", bg = "chrome" }
+"ui.window" = "border"
+"ui.help" = { fg = "text", bg = "chrome" }
+
+"ui.menu" = { fg = "text", bg = "chrome" }
+"ui.menu.selected" = { fg = "bright", bg = "selection" }
+"ui.menu.scroll" = { fg = "accent", bg = "line_soft" }
+
+"ui.picker.header" = { fg = "muted", bg = "chrome" }
+"ui.picker.header.column" = "muted"
+"ui.picker.header.column.active" = { fg = "accent_light", modifiers = ["bold"] }
+
+"ui.highlight" = { bg = "line" }
+"ui.highlight.frameline" = { bg = "selection" }
+"ui.virtual.whitespace" = "line_number"
+"ui.virtual.indent-guide" = "line_number"
+"ui.virtual.inlay-hint" = "muted"
+"ui.virtual.ruler" = { bg = "line_soft" }
+"ui.virtual.jump-label" = { fg = "editor", bg = "orange", modifiers = ["bold"] }
+"ui.virtual.wrap" = "line_number"
+
+# Diagnostics
+"diagnostic" = { underline = { color = "muted", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.info" = { underline = { color = "cyan", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "green", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"error" = "red"
+"warning" = "orange"
+"info" = "cyan"
+"hint" = "green"
+
+"ui.debug.breakpoint" = "red"
+"ui.debug.active" = { bg = "selection" }
+
+[palette]
+editor = "#12141A"
+chrome = "#0E0F13"
+line = "#1A1D26"
+line_soft = "#171920"
+border = "#2B2F3A"
+
+text = "#E6E9F2"
+bright = "#F2F2F7"
+parameter = "#D0D7E8"
+muted = "#8A92A6"
+comment = "#5C6475"
+line_number = "#3B4150"
+punctuation = "#8A92A6"
+
+accent = "#3D7BE6"
+accent_light = "#6EA3FF"
+
+keyword = "#6EA3FF"
+function = "#8FD3FF"
+cyan = "#8FD3FF"
+type = "#B9A6FF"
+string = "#7FE0B5"
+green = "#7FE0B5"
+number = "#FFB36B"
+orange = "#FFB36B"
+macro = "#FF9EC2"
+red = "#FF7D8D"
+
+selection = "#263B66"
+selection_primary = "#304B82"
