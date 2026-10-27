@@ -2,6 +2,11 @@
 
 A dark theme for Zed, Alacritty, Ghostty, Neovim, and Helix.
 
+<p align="center">
+  <img src="assets/ferese-blue.png" alt="Ferese Blue theme showing Zig code in Helix" width="49%">
+  <img src="assets/ferese-blue-transparent.png" alt="Ferese Blue theme with a transparent background showing Zig code in Helix" width="49%">
+</p>
+
 ## Installation
 
 The commands below use the default Linux configuration paths and require `curl`. If you use a custom configuration directory, change the destination paths accordingly.
