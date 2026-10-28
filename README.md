@@ -1,6 +1,6 @@
 # Ferese Blue
 
-A dark theme for Zed, Alacritty, Ghostty, Neovim, and Helix.
+A dark theme for Zed, Alacritty, Ghostty, Neovim, Helix, and Zellij.
 
 <p align="center">
   <img src="assets/ferese-blue.png" alt="Ferese Blue theme showing Zig code in Helix" width="49%">
@@ -101,3 +101,19 @@ theme = ferese
 ```
 
 Remove any explicit color settings that override the theme, then reload your configuration or restart Ghostty. See [Ghostty's theme settings](https://ghostty.org/docs/features/theme).
+
+### Zellij
+
+```sh
+mkdir -p ~/.config/zellij/themes
+curl -fLo ~/.config/zellij/themes/ferese-blue.kdl \
+  https://raw.githubusercontent.com/ferese-wm/ferese-blue/main/zellij/ferese-blue.kdl
+```
+
+Set this in `~/.config/zellij/config.kdl`:
+
+```kdl
+theme "ferese-blue"
+```
+
+If a `theme` setting already exists, replace its value. Zellij picks up theme changes automatically. See [Zellij's theme settings](https://zellij.dev/documentation/themes.html).
